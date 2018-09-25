@@ -1,28 +1,278 @@
-.App {
-  text-align: center;
+
+html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  color: #000000;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  align-items: stretch;
+}
+
+.skip-map {
+  position: fixed;
+  left: 0;
+  top: -500px;
+  background: #BF1722;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-map:focus {
+  position: fixed;
+  left: 0px;
+  top: 0px
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  color: #ffffff;
+  flex: 0 0 40px;
 }
 
 .App-title {
+  font-size: 1em;
+}
+
+#maincontent {
+  flex: 1 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start; /* glues content to top */
+  align-items: stretch;        /* column's stretch direction */
+}
+
+#map-container {
+  flex: 0 0 50%;  /* works better than height */
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes jump {
+  from { top: -10px; }
+}
+
+.blinking {
+  animation: jump 0.3s infinite alternate;
+}
+
+
+/* locations list */
+
+#places-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.query-input {
   font-size: 1.5em;
+  border-width: 2px 0 2px 0;
+  width: 100%;
+  flex: 0 0 40px;
 }
 
-.App-intro {
-  font-size: large;
+.query-input:focus {
+  background-color: #ffa;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.places-list {
+  padding: 0;
+  margin: 0;
+  flex: 1 0 40vh;
+  overflow: auto;
+}
+
+.places-list li {
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: Arial,sans-serif;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.place-button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.selected-place button {
+  background-color: #ffd;
+}
+
+.selected-place button:focus {
+  outline: 0;
+  background-color: #ffa;
+}
+
+li button {
+  width: 100%;
+  background-color: #fff;
+  border-width: 0;
+  border-bottom-width: 1px;
+  padding: 0;
+}
+
+.place-profile {
+  width: 96%;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.place-header {
+  width: 96%;
+  justify-content: space-between; /* align horizontal */
+  align-items: center; /* align vertical */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.place-name {
+  min-width: 96%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fsq-rating {
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fsq-missing-msg {
+  color: gray;
+}
+
+.keywords {
+  text-align: left;
+  margin-top: 0;
+  width: 96%;
+}
+
+.place-main-content {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 96%;
+}
+
+.place-img {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  margin-bottom: 5px;
+}
+
+.fsq-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.place-main-text {
+  width: 96%;
+  margin-left: 2%;
+}
+
+.fsq-address {
+  text-align: left;
+}
+
+.fsq-tip {
+  text-align: left;
+}
+
+.external-links {
+}
+
+.small_logo {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 300px) {
+  .place-main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .place-img {
+    width: 110px;
+    height: 110px;
+    padding-top: unset;
+  }
+
+  .place-main-text {
+    max-width: unset;
+    flex: 1;
+  }
+
+  .fsq-address {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  #maincontent {
+    flex-direction: row;
+    align-items: stretch;  /* resize map and list to full height */
+  }
+
+  #map-container {
+    height: 100%;
+    flex: 0 0 60%;
+  }
+
+  #places-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* removes top border with a wide screen */
+  .query-input {
+    border-width: 0 0 2px 0;
+  }
+
 }
