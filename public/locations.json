@@ -1,0 +1,104 @@
+{
+   "places": [{
+         "position": {
+            "lat": 43.054764271049386,
+            "lng": -87.90493614307088
+         },
+         "foursquareId": "4ad4c004f964a5208bec20e3",
+         "facebookUrl": "https://www.facebook.com/lakefront/",
+         "www": "http://www.lakefrontbrewery.com",
+         "description": "Lakefront Brewery",
+         "keywords": "tours fish fry beer cheese curds bratwurst potato pancakes happy hour"
+      }, {
+         "position": {
+            "lat": 43.04083771542838,
+            "lng": -87.91099555354779
+         },
+         "foursquareId": "4b5fb096f964a5204fc829e3",
+         "facebookUrl": "https://www.facebook.com/MilwRep",
+         "www": "https://www.milwaukeerep.com/",
+         "description": "Milwaukee Repertory Theater",
+         "keywords": "theater"
+      }, {
+         "position": {
+            "lat": 43.03161372573386,
+            "lng": -87.91711986064911
+         },
+         "foursquareId": "4e729715483ba9661cff863c",
+         "facebookUrl":"https://www.facebook.com/hdmuseum",
+         "www": "https://www.harley-davidson.com/us/en/museum.html",
+         "description": "Harley-Davidson Museum",
+         "keywords": "bike tours bikers museums evel knievel"
+      }, {
+         "position": {
+            "lat": 43.03266238331932,
+            "lng": 88.03717553181696
+         },
+         "foursquareId": "4ade7e07f964a520247621e3", 
+         "facebookUrl": "https://www.facebook.com/MilwaukeeCountyZoo/",
+         "www": "http://www.milwaukeezoo.org/",
+         "description": "Milwaukee County Zoo",
+         "keywords": "zoos picnics fresh air dinosaurs lion cubs fish stingrays"
+      }, {
+         "position": {
+            "lat": 43.02831192948261,
+            "lng": -87.97145873308182
+         },
+         "foursquareId": "4b154fddf964a52060af23e3", 
+         "facebookUrl": "https://www.facebook.com/Brewers",
+         "www": "https://www.mlb.com/brewers",
+         "description": "Miller Park",
+         "keywords": "brewers brewers game tailgate brew crew baseball bratwurst hot dogs beer"
+      }, {
+         "position": {
+            "lat": 43.03441839346725,
+            "lng": -88.00791720017759
+         },
+         "foursquareId": "4c25ea5f136d20a1c757e461", 
+         "facebookUrl": "https://www.facebook.com/Blues-Egg-136173339749011/",
+         "www": "http://bluesegg.com/",
+         "description": "Blue's Egg",
+         "keywords": "breakfast food brunch food healthy food lively coffee blueberry pancakes cozy"
+      }, {
+         "position": {
+            "lat": 43.052965606790764,
+            "lng": -87.89931700787182
+         },
+         "foursquareId": "4b083e6df964a5202d0723e3", 
+         "facebookUrl": "https://www.facebook.com/GloriososItalianMarket/",
+         "www": "https://gloriosos.com/",
+         "description": "Glorioso's",
+         "keywords": "italian food sandwiches delis milwaukee muffaletta brady street homemade food"
+      }, {
+         "position": {
+            "lat": 43.035204024841406,
+            "lng": -87.90817434169543
+         },
+         "foursquareId": "4ad4c004f964a52082ec20e3", 
+         "facebookUrl": "https://www.facebook.com/MilwaukeePublicMarket/",
+         "www": "https://milwaukeepublicmarket.org/",
+         "description": "Milwaukee Public Market",
+         "keywords": "green kitchen lobster aladdin sandwiches desserts sushi cake coffee fresh fruit juice lunch"
+      }, {
+         "position": {
+            "lat": 43.03688046751483,
+            "lng": -87.97777186751742
+         },
+         "foursquareId": "53d69470498eecb01f6e2aae", 
+         "facebookUrl": "https://www.facebook.com/StoryHillBKC",
+         "www": "http://storyhillbkc.com/",
+         "description": "Story Hill BKC",
+         "keywords": "crepes lively healthy food authentic casual cozy brunch food happy hour breakfast food steak wine coffee"
+      }, {
+         "position": {
+            "lat": 42.987795890129824,
+            "lng": -87.94860680287513
+         },
+         "foursquareId": "4aedb0c9f964a5202bce21e3", 
+         "facebookUrl": "https://www.facebook.com/pages/Leons-Frozen-Custard/104021859633948",
+         "www": "http://leonsfrozencustard.us",
+         "description": "Leon's Frozen Custard",
+         "keywords": "custard butter pecan strawberries chocolate malts authentic good for a late night"
+      }
+   ]
+}
