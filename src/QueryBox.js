@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-QueryBox.propTypes = {
-    id: PropTypes.string.isRequired,
-    query: PropTypes.string.isRequired,
-    updateQuery: PropTypes.func.isRequired
-};
+
 
 class QueryBox extends Component {
    onQueryChange = (query) => {
@@ -26,5 +22,11 @@ class QueryBox extends Component {
       )
    }
 }
+
+QueryBox.propTypes = {
+    id: PropTypes.string.isRequired,
+    query: PropTypes.string.isRequired,
+    updateQuery: PropTypes.func.isRequired
+};
 
 export default QueryBox;

@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-LocationsList.propTypes = {
-    places: PropTypes.array.isRequired,
-    highlightedPlace: PropTypes.number.isRequired,
-    selectedPlace: PropTypes.number.isRequired,
-    placeOnClick: PropTypes.func.isRequired,
-    placeOnFocus: PropTypes.func.isRequired,
-    selectPlaceByIdx: PropTypes.func.isRequired
-}
 
 class LocationsList extends Component {
 
@@ -197,5 +189,15 @@ class LocationsList extends Component {
      )
    }
  }
+
+ LocationsList.propTypes = {
+  places: PropTypes.array.isRequired,
+  highlightedPlace: PropTypes.number.isRequired,
+  selectedPlace: PropTypes.number.isRequired,
+  placeOnClick: PropTypes.func.isRequired,
+  placeOnFocus: PropTypes.func.isRequired,
+  selectPlaceByIdx: PropTypes.func.isRequired
+}
+
 
 export default LocationsList;

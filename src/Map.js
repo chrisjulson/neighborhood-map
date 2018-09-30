@@ -4,13 +4,6 @@ import PropTypes from 'prop-types';
 
 // leaflet.js is not required for app to work but leaflet.css is still required
 
-Map.propTypes = {
-    markers: PropTypes.array.isRequired,
-    reloadMarkers: PropTypes.number.isRequired,
-    setReloadMarkers: PropTypes.func.isRequired,
-    selectedMarker: PropTypes.number.isRequired,
-    markerOnClick: PropTypes.func.isRequired
-};
 
 class Map extends Component {
 
@@ -111,5 +104,13 @@ class Map extends Component {
       )
    }
 }
+
+Map.propTypes = {
+    markers: PropTypes.array.isRequired,
+    reloadMarkers: PropTypes.number.isRequired,
+    setReloadMarkers: PropTypes.func.isRequired,
+    selectedMarker: PropTypes.number.isRequired,
+    markerOnClick: PropTypes.func.isRequired
+};
 
 export default Map;
