@@ -32,7 +32,7 @@ class Map extends Component {
    }
 
    removeMarkersFromMap() {
-      this.markerRefs.foreach((markerRef, inx) => {
+      this.markerRefs.forEach((markerRef, inx) => {
          if(markerRef) {
             markerRef.remove();
          }
