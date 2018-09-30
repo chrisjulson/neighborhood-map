@@ -11,7 +11,7 @@ class Map extends Component {
 
    highlightSelectedMarker() {
       if(this.props.markers) {
-         this.props.markers.foreach(( marker, idx ) => {
+         this.props.markers.forEach(( marker, idx ) => {
             if(marker.mapref) {
                if(this.props.selectedMarker === idx) {
                   L.DomUtil.addClass(marker.mapref._icon, 'blinking');
