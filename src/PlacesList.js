@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 class PlacesList extends Component {
 
   componentDidUpdate() {
-    // Scroll places list to show selected place
-    // by setting focus on it
+    // Scroll places list to show selected place and setting focus on it 
     if(this.props.selectedPlace > -1) {
       const foc = document.getElementById('place-'+this.props.selectedPlace);
       if (foc) {
@@ -190,7 +189,7 @@ class PlacesList extends Component {
   }
 }
 
- PlacesList.propTypes = {
+PlacesList.propTypes = {
   places: PropTypes.array.isRequired,
   highlightedPlace: PropTypes.number.isRequired,
   selectedPlace: PropTypes.number.isRequired,
@@ -199,5 +198,4 @@ class PlacesList extends Component {
   selectPlaceByIdx: PropTypes.func.isRequired
 }
 
-
-export default PlacesList;
+export default PlacesList
