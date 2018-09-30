@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Map from './Map';
-import * FoursquareAPI from './FoursquareAPI';
+import * as FoursquareAPI from './FoursquareAPI';
 import escapeRegExp from 'escape-string-regexp';
 import QueryBox from './QueryBox';
 import PlacesList from './LocationsList';
