@@ -10,7 +10,7 @@ var urlsToCache = [
     '/src/App.css',
     '/src/App.js',
     '/src/Map.js',
-    '/src/LocationsList.js',
+    '/src/PlacesList.js',
     '/src/QueryBox.js',
     '/src/DBHelper',
     '/src/FoursquareAPI.js',

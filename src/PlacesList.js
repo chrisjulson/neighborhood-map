@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-class LocationsList extends Component {
+class PlacesList extends Component {
 
    componentDidUpdate() {
      // Scroll places list to show selected place
@@ -190,7 +190,7 @@ class LocationsList extends Component {
    }
  }
 
- LocationsList.propTypes = {
+ PlacesList.propTypes = {
   places: PropTypes.array.isRequired,
   highlightedPlace: PropTypes.number.isRequired,
   selectedPlace: PropTypes.number.isRequired,
@@ -200,4 +200,4 @@ class LocationsList extends Component {
 }
 
 
-export default LocationsList;
+export default PlacesList;

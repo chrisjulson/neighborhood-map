@@ -4,7 +4,7 @@ import Map from './Map';
 import * as FoursquareAPI from './FoursquareAPI';
 import escapeRegExp from 'escape-string-regexp';
 import QueryBox from './QueryBox';
-import PlacesList from './LocationsList';
+import PlacesList from './PlacesList';
 import DBHelper from './DBHelper';
 
 class App extends Component {
