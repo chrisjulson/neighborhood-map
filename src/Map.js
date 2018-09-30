@@ -41,7 +41,7 @@ class Map extends Component {
    }
 
    loadMarkersToMap(markers) {
-      this.props.markers.foreach((marker, idx) => {
+    this.props.markers.forEach((marker, idx) => {
          /* !!DO NOT USE setState here!! this is only a completion of mapref and is not considered a state change */
          if (!marker.mapref) {
             marker.mapref = L.marker(marker.position)
