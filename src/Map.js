@@ -65,7 +65,7 @@ class Map extends Component {
   }
 
   componentDidMount() {
-    this.map = L.map(this.props.mapid).setView([43.041070, -81.90942], 14);
+    this.map = L.map(this.props.mapid).setView([43.034640, -87.915020], 14);
 
 
     const theMapUrl='https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2lsM250NWFtIiwiYSI6ImNqbGVyZm85ZTA1cDMzcXAxcWt6d2Y1bXUifQ.EZHvZaGIYJelxbla1E_STA';
