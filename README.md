@@ -12,6 +12,16 @@ For the final project in the FEND nanodegree program we were tasked with creatin
 4. Once that has finished type `npm start` this should open the app in your browser
 5. If the app has not opened in your browser navigate to `localhost:3000`
 
+### Build instructions
+
+1. Clone the repository
+2. Navigate to its location
+3. Open a terminal window and type `npm install`
+4. Once that has finished type `npm run build`
+5. Once that has finished type `npm install -g serve`
+6. Once that has finished type `serve -s build`
+7. For best results with the test server open an incogneto / private tab and navigate to `http://localhost:5000`
+
 ## Application design
 
 ### Create React App
